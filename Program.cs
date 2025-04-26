@@ -50,8 +50,7 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
 
-if (app.Environment.IsDevelopment())
-{
+
     // Enable middleware to serve generated Swagger as a JSON endpoint.
     app.UseSwagger();
 
@@ -61,7 +60,7 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
         c.RoutePrefix = string.Empty; // Set to an empty string for Swagger UI at the root (localhost:5000)
     });
-}
+
 
 
 app.UseAuthorization();
