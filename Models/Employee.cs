@@ -41,7 +41,7 @@ namespace Backend.Models
         [MaxLength(255)]
         public string ImageUrl { get; set; }  // image_url
 
-        public JsonDocument EmployeeConfig { get; set; }  // employee_config (jsonb)
+        public JsonDocument? EmployeeConfig { get; set; }  // employee_config (jsonb)
 
         public decimal DefaultRate { get; set; } = 0.00M;
     }

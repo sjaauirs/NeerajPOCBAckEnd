@@ -22,15 +22,11 @@ namespace Backend.Dtos
 
         public string IfscCode { get; set; }  // ifsc_code
 
-        public DateTime CreatedOn { get; set; }  // created_on
-
-        public DateTime? UpdatedOn { get; set; }  // updated_on
-
         public int DeleteNbr { get; set; }  // delete_nbr
 
         public string ImageUrl { get; set; }  // image_url
 
-        public JsonDocument EmployeeConfig { get; set; }  // employee_config
+        public JsonDocument? EmployeeConfig { get; set; }  // employee_config
 
         public decimal DefaultRate { get; set; } = 0.00M;
     }
